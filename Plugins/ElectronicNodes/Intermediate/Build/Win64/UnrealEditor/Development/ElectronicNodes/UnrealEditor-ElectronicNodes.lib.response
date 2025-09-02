@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ElectronicNodes.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE_File\GwjProject\Intermediate\Build\Win64\GwjProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"D:\UE_File\GwjProject\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Module.ElectronicNodes.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\Default.rc2.res"
+/OUT:"D:\UE_File\GwjProject\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\Development\ElectronicNodes\UnrealEditor-ElectronicNodes.lib"

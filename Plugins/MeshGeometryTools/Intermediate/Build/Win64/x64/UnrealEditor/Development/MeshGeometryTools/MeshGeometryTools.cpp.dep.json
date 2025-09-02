@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\meshgeometrytools\\source\\meshgeometrytools\\private\\meshgeometrytools.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\x64\\gwjprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\meshgeometrytools\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\meshgeometrytools\\definitions.meshgeometrytools.h",
+            "d:\\ue_file\\gwjproject\\plugins\\meshgeometrytools\\source\\meshgeometrytools\\public\\meshgeometrytools.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

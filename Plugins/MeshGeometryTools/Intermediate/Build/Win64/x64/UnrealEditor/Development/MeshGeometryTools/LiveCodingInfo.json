@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MeshGeometryTools.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"MeshGeometryTools.cpp.obj"
+		]
+	}
+}

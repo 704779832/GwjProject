@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\source\\bufferingpotentialislimitless\\private\\textureassettools\\updatetexturehelper.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\x64\\gwjprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\bufferingpotentialislimitless\\definitions.bufferingpotentialislimitless.h",
+            "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\source\\bufferingpotentialislimitless\\public\\textureassettools\\updatetexturehelper.h",
+            "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\intermediate\\build\\win64\\unrealeditor\\inc\\bufferingpotentialislimitless\\uht\\updatetexturehelper.generated.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\volumetexture.h",
+            "d:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\volumetexture.generated.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\texture2darray.h",
+            "d:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\texture2darray.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

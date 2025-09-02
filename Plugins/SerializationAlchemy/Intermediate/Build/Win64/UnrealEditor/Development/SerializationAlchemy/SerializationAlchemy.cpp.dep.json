@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\serializationalchemy\\source\\serializationalchemy\\private\\serializationalchemy.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\gwjprojecteditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\serializationalchemy\\intermediate\\build\\win64\\unrealeditor\\development\\serializationalchemy\\definitions.serializationalchemy.h",
+            "d:\\ue_file\\gwjproject\\plugins\\serializationalchemy\\source\\serializationalchemy\\public\\serializationalchemy.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

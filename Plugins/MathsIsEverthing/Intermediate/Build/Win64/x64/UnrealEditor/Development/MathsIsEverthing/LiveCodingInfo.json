@@ -1,0 +1,14 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MathsIsEverthing.cpp.obj": [
+			"MathsHelper.gen.cpp.obj",
+			"MathsIsEverthing.init.gen.cpp.obj",
+			"PolygonMathsStruct.gen.cpp.obj",
+			"TriangleMathsStruct.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"MathsHelper.cpp.obj",
+			"MathsIsEverthing.cpp.obj"
+		]
+	}
+}

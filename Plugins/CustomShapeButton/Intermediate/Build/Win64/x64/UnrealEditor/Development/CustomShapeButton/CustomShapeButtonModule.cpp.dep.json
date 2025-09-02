@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\customshapebutton\\source\\customshapebutton\\private\\customshapebuttonmodule.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\x64\\gwjprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpplatest.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\customshapebutton\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\customshapebutton\\definitions.customshapebutton.h",
+            "d:\\ue_file\\gwjproject\\plugins\\customshapebutton\\source\\customshapebutton\\public\\customshapebuttonmodule.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

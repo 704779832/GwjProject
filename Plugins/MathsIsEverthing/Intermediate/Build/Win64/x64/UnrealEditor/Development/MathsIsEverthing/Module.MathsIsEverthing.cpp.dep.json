@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mathsiseverthing\\module.mathsiseverthing.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\x64\\gwjprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mathsiseverthing\\definitions.mathsiseverthing.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\unrealeditor\\inc\\mathsiseverthing\\uht\\mathshelper.gen.cpp",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\source\\mathsiseverthing\\public\\mathshelper.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\unrealeditor\\inc\\mathsiseverthing\\uht\\mathshelper.generated.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\unrealeditor\\inc\\mathsiseverthing\\uht\\mathsiseverthing.init.gen.cpp",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\unrealeditor\\inc\\mathsiseverthing\\uht\\polygonmathsstruct.gen.cpp",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\source\\mathsiseverthing\\public\\polygonmathsstruct.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\unrealeditor\\inc\\mathsiseverthing\\uht\\polygonmathsstruct.generated.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\unrealeditor\\inc\\mathsiseverthing\\uht\\trianglemathsstruct.gen.cpp",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\source\\mathsiseverthing\\public\\trianglemathsstruct.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\unrealeditor\\inc\\mathsiseverthing\\uht\\trianglemathsstruct.generated.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mathsiseverthing\\permoduleinline.gen.cpp",
+            "d:\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

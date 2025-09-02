@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ElectronicNodes-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE_File\GwjProject\Intermediate\Build\Win64\GwjProjectEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.ShadowErrors.h.obj"
+"D:\UE_File\GwjProject\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\DebugGame\ElectronicNodes\Module.ElectronicNodes.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\DebugGame\ElectronicNodes\Default.rc2.res"
+/OUT:"D:\UE_File\GwjProject\Plugins\ElectronicNodes\Intermediate\Build\Win64\UnrealEditor\DebugGame\ElectronicNodes\UnrealEditor-ElectronicNodes-Win64-DebugGame.lib"

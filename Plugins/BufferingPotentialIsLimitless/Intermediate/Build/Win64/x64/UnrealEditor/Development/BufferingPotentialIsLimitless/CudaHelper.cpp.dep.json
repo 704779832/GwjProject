@@ -1,0 +1,18 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\source\\bufferingpotentialislimitless\\private\\textureshare\\cudahelper.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\x64\\gwjprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\bufferingpotentialislimitless\\definitions.bufferingpotentialislimitless.h",
+            "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\source\\bufferingpotentialislimitless\\public\\textureshare\\cudahelper.h",
+            "d:\\ue_file\\gwjproject\\plugins\\bufferingpotentialislimitless\\intermediate\\build\\win64\\unrealeditor\\inc\\bufferingpotentialislimitless\\uht\\cudahelper.generated.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\cuda\\source\\public\\cudamodule.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\cuda\\source\\public\\cudawrapper.h",
+            "d:\\ue_5.5\\engine\\source\\thirdparty\\nvidia\\cuda\\cuda.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

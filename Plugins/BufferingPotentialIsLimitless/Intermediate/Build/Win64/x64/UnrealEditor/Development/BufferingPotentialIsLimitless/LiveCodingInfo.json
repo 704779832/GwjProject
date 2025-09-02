@@ -1,0 +1,23 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.BufferingPotentialIsLimitless.cpp.obj": [
+			"BufferingPotentialIsLimitless.init.gen.cpp.obj",
+			"CopyTexutreByShaderTools.gen.cpp.obj",
+			"CudaHelper.gen.cpp.obj",
+			"TextureBufferShareObject.gen.cpp.obj",
+			"TextureBufferShareObjectDX12.gen.cpp.obj",
+			"TextureBufferShareObjectVulkan.gen.cpp.obj",
+			"TextureShareHelper.gen.cpp.obj",
+			"UpdateTextureHelper.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"BufferingPotentialIsLimitless.cpp.obj",
+			"CopyTexutreByShaderTools.cpp.obj",
+			"UpdateTextureHelper.cpp.obj",
+			"CudaHelper.cpp.obj",
+			"TextureBufferShareObjectDX12.cpp.obj",
+			"TextureBufferShareObjectVulkan.cpp.obj",
+			"TextureShareHelper.cpp.obj"
+		]
+	}
+}

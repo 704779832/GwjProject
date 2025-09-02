@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-SerializationAlchemy.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE_File\GwjProject\Intermediate\Build\Win64\GwjProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\UE_File\GwjProject\Plugins\SerializationAlchemy\Intermediate\Build\Win64\UnrealEditor\Development\SerializationAlchemy\SerializationAlchemy.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\SerializationAlchemy\Intermediate\Build\Win64\UnrealEditor\Development\SerializationAlchemy\Default.rc2.res"
+/OUT:"D:\UE_File\GwjProject\Plugins\SerializationAlchemy\Intermediate\Build\Win64\UnrealEditor\Development\SerializationAlchemy\UnrealEditor-SerializationAlchemy.lib"

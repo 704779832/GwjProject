@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.SerializationAlchemy.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"SerializationAlchemy.cpp.obj"
+		]
+	}
+}

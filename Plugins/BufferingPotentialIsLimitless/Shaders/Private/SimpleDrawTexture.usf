@@ -1,0 +1,193 @@
+#include "/Engine/Private/Common.ush"
+
+void MainVS(
+	float4 InPosition : ATTRIBUTE0,
+	float2 InUV : ATTRIBUTE1,
+	out float2 OutUV : TEXCOORD0,
+	out float4 OutPosition : SV_POSITION
+	)
+{
+    OutPosition = InPosition;
+    
+    OutUV = InUV;
+}
+
+Texture2D InputTexture;
+SamplerState InputSampler;
+int ConvertType;
+/*
+0 do not covert 
+1 BGRA8 To RGBA8 Or RGBA8 To BGRA8
+*/
+
+int DrawType;
+/*
+0 Left Top
+1 ClipCenter
+2 ClipCenterAndCompress
+*/
+
+float2 SourceSize;
+float2 TargetSize; //DrawType为0时,绘制目标大小;DrawType为1时,绘制目标大小; DrawType为2时,裁剪目标大小
+float2 TargetSize2; //DrawType为2时 压缩目标大小，其他情况无意义
+float2 CanvasSize;//实际画布大小
+
+
+float4 MySampleSourceTexture(float2 InUV)
+{
+    if (ConvertType == 0)
+    {
+        return Texture2DSample(InputTexture, InputSampler, InUV);
+    }
+    else if (ConvertType == 1)
+    {
+        float4 temp = Texture2DSample(InputTexture, InputSampler, InUV);
+        float4 OutValue;
+        OutValue.r = temp.b;
+        OutValue.g = temp.g;
+        OutValue.b = temp.r;
+        OutValue.a = temp.a;
+        return OutValue;
+    }
+    
+    return Texture2DSample(InputTexture, InputSampler, InUV);
+}
+
+float4 CalRectUVLeftTop(float2 InSource, float2 InTarget)
+{
+    return float4(0, 0, InSource / InTarget);
+}
+
+float4 CalRectUVCenter(float2 InSource,float2 InTarget)
+{
+    float2 tempDelta = InTarget - InSource;
+    float2 tempLeftTop = abs(tempDelta) / 2;
+    float2 tempRightBottom = tempLeftTop + InTarget;
+
+    return float4(tempLeftTop / InSource, tempRightBottom / InSource);
+
+}
+
+float2 ClampFloat2Min(float2 In,float2 InMin)
+{
+    float2 temp = In;
+    temp.x = max(InMin.x, temp.x);
+    temp.y = max(InMin.y, temp.y);
+    return temp;
+}
+
+float2 ClampFloat2Max(float2 In,float2 InMax)
+{
+    float2 temp = In;
+    temp.x = min(temp.x, InMax.x);
+    temp.y = min(temp.y, InMax.y);
+    return temp;
+}
+
+int CheckUVBox(float2 In,float4 InBox)
+{
+    //return 1 Inside Box
+    //return 0 InSide Border
+    //return -1 Outside Box
+    //InBox.x xMin InBox.y yMin InBox.z xMax InBox.w yMax
+    if(In.x<InBox.x||In.x>InBox.z||
+        In.y<InBox.y||In.y>InBox.w)
+    {
+        return -1;
+    }
+    else if (In.x == InBox.x || In.x == InBox.z ||
+        In.y == InBox.y || In.y == InBox.w)
+    {
+        return 0;
+    }
+    
+    return 1;
+}
+
+float2 ClampUVInBox(float2 In, float4 InBox)
+{ 
+    //InBox.x xMin InBox.y yMin InBox.z xMax InBox.w yMax
+    float2 temp = In;
+    temp -= InBox.xy;
+    
+    temp /= float2(InBox.z - InBox.x, InBox.w - InBox.y);
+    return temp;
+
+}
+
+float4 MySampleClipTexture(float2 InUV, float2 InClipSize, float2 InSourceSize, float4 OutSideColor = float4(1, 0, 0, 1))
+{
+    if (InUV.x < 0 || InUV.x > 1 || InUV.y < 0 || InUV.y>1)
+    {
+        return OutSideColor;
+    }
+    float4 tempClipMinMaxUVAbs = CalRectUVCenter(InSourceSize, InClipSize);
+    float2 tempClipMinMaxUVAbsSize = tempClipMinMaxUVAbs.zw - tempClipMinMaxUVAbs.xy;
+
+    float2 tempUV = InUV * tempClipMinMaxUVAbsSize + tempClipMinMaxUVAbs.xy;
+    
+    return MySampleSourceTexture(tempUV);
+
+}
+
+void MainPS(
+	in float2 TextureCoordinate : TEXCOORD0,
+	out float4 OutColor : SV_Target0
+	)
+{
+    OutColor = float4(1.0, 0.0, 0.0, 0.0);
+
+    float2 tempCanvasPos = CanvasSize * TextureCoordinate;
+    if(DrawType==0)
+    {
+        float4 tempMinMaxUV = CalRectUVLeftTop(SourceSize, CanvasSize);
+        
+        if (CheckUVBox(TextureCoordinate, tempMinMaxUV)<0)
+        {
+            //OutColor = float4(1, 0, 0, 1);
+            return;
+        }
+        
+        float2 tempUV = ClampUVInBox(TextureCoordinate, tempMinMaxUV);
+        
+        OutColor=MySampleSourceTexture(tempUV);
+        return;
+
+    }
+    else if (DrawType == 1 || DrawType == 2)
+    {
+        float2 tempClipSize = ClampFloat2Max(TargetSize, SourceSize); //这种时候TargetSize就是裁剪分辨率
+        tempClipSize = ClampFloat2Max(tempClipSize, CanvasSize);
+        
+        float2 tempCanvasPos = CanvasSize * TextureCoordinate;
+        
+        float2 tempClipUV = tempCanvasPos / tempClipSize;
+
+        if (tempClipUV.x > 1 || tempClipUV.y>1)
+        {
+            //OutColor = float4(0, 0, 0, 1);
+            return;
+        }
+        
+        if (DrawType==2)
+        {
+            float2 tempCompressSize = ClampFloat2Max(TargetSize2, tempClipSize); //这种时候TargetSize2就是压缩分辨率
+            
+            if (tempCanvasPos.x > tempCompressSize.x || tempCanvasPos.y > tempCompressSize.y)
+            {
+                //OutColor = float4(0, 0, 0, 1);
+                return;
+            }
+            
+            float2 tempCompressUV = tempCanvasPos / tempCompressSize;
+            
+            OutColor = MySampleClipTexture(tempCompressUV, tempClipSize, SourceSize);
+            return;
+        }
+        else
+        {
+            OutColor = MySampleClipTexture(tempClipUV, tempClipSize, SourceSize);
+            return;
+        }
+    }
+}

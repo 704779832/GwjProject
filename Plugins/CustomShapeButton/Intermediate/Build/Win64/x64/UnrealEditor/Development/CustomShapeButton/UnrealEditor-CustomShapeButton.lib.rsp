@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CustomShapeButton.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE_File\GwjProject\Intermediate\Build\Win64\x64\GwjProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.CppLatest.h.obj"
+"D:\UE_File\GwjProject\Plugins\CustomShapeButton\Intermediate\Build\Win64\x64\UnrealEditor\Development\CustomShapeButton\Module.CustomShapeButton.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\CustomShapeButton\Intermediate\Build\Win64\x64\UnrealEditor\Development\CustomShapeButton\CustomShapeButton.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\CustomShapeButton\Intermediate\Build\Win64\x64\UnrealEditor\Development\CustomShapeButton\CustomShapeButtonManager.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\CustomShapeButton\Intermediate\Build\Win64\x64\UnrealEditor\Development\CustomShapeButton\CustomShapeButtonModule.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\CustomShapeButton\Intermediate\Build\Win64\x64\UnrealEditor\Development\CustomShapeButton\SCustomShapeButton.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\CustomShapeButton\Intermediate\Build\Win64\x64\UnrealEditor\Development\CustomShapeButton\Default.rc2.res"
+/OUT:"D:\UE_File\GwjProject\Plugins\CustomShapeButton\Intermediate\Build\Win64\x64\UnrealEditor\Development\CustomShapeButton\UnrealEditor-CustomShapeButton.lib"

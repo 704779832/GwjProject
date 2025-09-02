@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.CustomShapeButton.cpp.obj": [
+			"CustomShapeButton.init.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"CustomShapeButton.cpp.obj",
+			"CustomShapeButtonManager.cpp.obj",
+			"CustomShapeButtonModule.cpp.obj",
+			"SCustomShapeButton.cpp.obj"
+		]
+	}
+}

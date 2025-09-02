@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MathsIsEverthing.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UE_File\GwjProject\Intermediate\Build\Win64\x64\GwjProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.obj"
+"D:\UE_File\GwjProject\Plugins\MathsIsEverthing\Intermediate\Build\Win64\x64\UnrealEditor\Development\MathsIsEverthing\Module.MathsIsEverthing.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\MathsIsEverthing\Intermediate\Build\Win64\x64\UnrealEditor\Development\MathsIsEverthing\MathsHelper.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\MathsIsEverthing\Intermediate\Build\Win64\x64\UnrealEditor\Development\MathsIsEverthing\MathsIsEverthing.cpp.obj"
+"D:\UE_File\GwjProject\Plugins\MathsIsEverthing\Intermediate\Build\Win64\x64\UnrealEditor\Development\MathsIsEverthing\Default.rc2.res"
+/OUT:"D:\UE_File\GwjProject\Plugins\MathsIsEverthing\Intermediate\Build\Win64\x64\UnrealEditor\Development\MathsIsEverthing\UnrealEditor-MathsIsEverthing.lib"

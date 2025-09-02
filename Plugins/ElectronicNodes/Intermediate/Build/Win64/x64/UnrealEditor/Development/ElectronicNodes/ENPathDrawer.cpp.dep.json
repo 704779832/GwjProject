@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\electronicnodes\\source\\electronicnodes\\private\\enpathdrawer.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\x64\\gwjprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\electronicnodes\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\electronicnodes\\definitions.electronicnodes.h",
+            "d:\\ue_file\\gwjproject\\plugins\\electronicnodes\\source\\electronicnodes\\private\\enpathdrawer.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\connectiondrawingpolicy.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\grapheditorsettings.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\unrealed\\public\\edgraphnode_comment.h",
+            "d:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\edgraphnode_comment.generated.h",
+            "d:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\grapheditor\\uht\\grapheditorsettings.generated.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\graphsplineoverlapresult.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\sgraphpin.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\sgraphnode.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\snodepanel.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\engine\\public\\diffresults.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\marqueeoperation.h",
+            "d:\\ue_5.5\\engine\\source\\runtime\\slate\\public\\widgets\\layout\\swrapbox.h",
+            "d:\\ue_file\\gwjproject\\plugins\\electronicnodes\\source\\electronicnodes\\private\\enconnectiondrawingpolicy.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\unrealed\\public\\edgraphutilities.h",
+            "d:\\ue_file\\gwjproject\\plugins\\electronicnodes\\source\\electronicnodes\\public\\electronicnodessettings.h",
+            "d:\\ue_file\\gwjproject\\plugins\\electronicnodes\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\uht\\electronicnodessettings.generated.h",
+            "d:\\ue_5.5\\engine\\source\\editor\\grapheditor\\public\\blueprintconnectiondrawingpolicy.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

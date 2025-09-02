@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\source\\mathsiseverthing\\private\\mathsiseverthing.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ue_file\\gwjproject\\intermediate\\build\\win64\\x64\\gwjprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mathsiseverthing\\definitions.mathsiseverthing.h",
+            "d:\\ue_file\\gwjproject\\plugins\\mathsiseverthing\\source\\mathsiseverthing\\public\\mathsiseverthing.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
